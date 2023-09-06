@@ -14,7 +14,10 @@
 <body>
     <div id="app">
         <button @click="generateMails()">Carica le mail</button>
-        <h1 v-for="mail in mails" v-if="mails.length >= 10">{{ mail }}</h1>
+        <div v-if="mails.length >= 10">
+            <h1 v-for="mail in mails">{{ mail }}</h1>
+        </div>
+        
     </div>
     <!-- JS -->
     <script type="text/javascript" src="./main.js"></script>
